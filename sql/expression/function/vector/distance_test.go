@@ -19,10 +19,10 @@ import (
 
 	assert "github.com/stretchr/testify/require"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/types"
-	"github.com/dolthub/go-mysql-server/sql/types/jsontests"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql/types/jsontests"
 )
 
 func jsonExpression(t *testing.T, val interface{}) sql.Expression {

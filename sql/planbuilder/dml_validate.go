@@ -18,9 +18,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
 )
 
 func (b *Builder) validateInsert(ins *plan.InsertInto) {

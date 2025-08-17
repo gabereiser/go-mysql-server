@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 var LoadDataScripts = []ScriptTest{

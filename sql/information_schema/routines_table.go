@@ -18,11 +18,11 @@ import (
 	"bytes"
 	"fmt"
 
-	. "github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/planbuilder"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	. "github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/planbuilder"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 const defaultRoutinesTableRowCount = 10

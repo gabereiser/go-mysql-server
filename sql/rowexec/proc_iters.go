@@ -22,9 +22,9 @@ import (
 
 	"github.com/dolthub/vitess/go/mysql"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
 )
 
 // ifElseIter is the row iterator for *IfElseBlock.

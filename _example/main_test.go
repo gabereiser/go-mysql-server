@@ -24,7 +24,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	gms "github.com/dolthub/go-mysql-server/sql"
+	gms "github.com/gabereiser/go-mysql-server/sql"
 )
 
 var expectedResults = [][]string{

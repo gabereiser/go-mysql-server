@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
-	"github.com/dolthub/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
 )
 
 func (b *BaseBuilder) buildFlushPrivileges(ctx *sql.Context, n *plan.FlushPrivileges, row sql.Row) (sql.RowIter, error) {

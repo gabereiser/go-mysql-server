@@ -22,13 +22,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dolthub/go-mysql-server/enginetest/scriptgen/setup"
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/planbuilder"
-	"github.com/dolthub/go-mysql-server/sql/transform"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/enginetest/scriptgen/setup"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/planbuilder"
+	"github.com/gabereiser/go-mysql-server/sql/transform"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 type JoinPlanTest struct {
@@ -612,7 +612,7 @@ HAVING count(v) >= 1)`,
 				q: `SELECT /*+ LOOKUP_JOIN(xy, alias2) LOOKUP_JOIN(xy, alias1) JOIN_ORDER(xy, alias2, alias1) */ * FROM xy WHERE (
       				EXISTS (SELECT * FROM xy Alias1 WHERE Alias1.x = (xy.x + 1))
       				AND EXISTS (SELECT * FROM uv Alias2 WHERE Alias2.u = (xy.x + 2)));`,
-				// These should both be JoinTypeSemiLookup, but for https://github.com/dolthub/go-mysql-server/issues/1893
+				// These should both be JoinTypeSemiLookup, but for https://github.com/gabereiser/go-mysql-server/issues/1893
 				types: []plan.JoinType{plan.JoinTypeSemiLookup, plan.JoinTypeSemiLookup},
 				exp:   []sql.Row{{0, 2}, {1, 0}},
 			},
@@ -1098,7 +1098,7 @@ join uv d on d.u = c.x`,
 			},
 			{
 				q: "select /*+ LOOKUP_JOIN(xy,uv) */ 1 from xy where x not in (select u from uv)",
-				// This should be JoinTypeSemiLookup, but for https://github.com/dolthub/go-mysql-server/issues/1894
+				// This should be JoinTypeSemiLookup, but for https://github.com/gabereiser/go-mysql-server/issues/1894
 				types: []plan.JoinType{plan.JoinTypeLeftOuterLookup},
 			},
 			{
@@ -1124,7 +1124,7 @@ join uv d on d.u = c.x`,
 		},
 	},
 	{
-		// This is a regression test for https://github.com/dolthub/go-mysql-server/pull/1889.
+		// This is a regression test for https://github.com/gabereiser/go-mysql-server/pull/1889.
 		// We should always prefer a more specific index over a less specific index for lookups.
 		name: "lookup join multiple indexes",
 		setup: []string{

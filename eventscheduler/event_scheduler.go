@@ -18,9 +18,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/analyzer"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/analyzer"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
 )
 
 // ErrEventSchedulerDisabled is returned when user tries to set `event_scheduler_notifier` global system variable to ON or OFF

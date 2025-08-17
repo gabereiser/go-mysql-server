@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/transform"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/transform"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // Ddl nodes have a reference to a database, but no children and a nil schema.

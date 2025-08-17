@@ -15,10 +15,10 @@
 package plan
 
 import (
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
-	"github.com/dolthub/go-mysql-server/sql/transform"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql/transform"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 
 	"github.com/gabereiser/go-mysql-server/sql"
 )

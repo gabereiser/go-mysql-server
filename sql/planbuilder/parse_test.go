@@ -27,11 +27,11 @@ import (
 	"github.com/dolthub/vitess/go/vt/sqlparser"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dolthub/go-mysql-server/memory"
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression/function"
-	"github.com/dolthub/go-mysql-server/sql/types"
-	_ "github.com/dolthub/go-mysql-server/sql/variables"
+	"github.com/gabereiser/go-mysql-server/memory"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression/function"
+	"github.com/gabereiser/go-mysql-server/sql/types"
+	_ "github.com/gabereiser/go-mysql-server/sql/variables"
 )
 
 type planTest struct {
@@ -3035,5 +3035,5 @@ func TestParseErrImplementsError(t *testing.T) {
 	require.NotContains(t, formatted, "0x", "Should not show memory address")
 
 	// Test that the error message is not a struct format
-	require.NotContains(t, formatted, "{github.com/dolthub/go-mysql-server/sql/planbuilder.parseErr")
+	require.NotContains(t, formatted, "{github.com/gabereiser/go-mysql-server/sql/planbuilder.parseErr")
 }

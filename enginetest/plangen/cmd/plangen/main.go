@@ -27,11 +27,11 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/dolthub/go-mysql-server/enginetest"
-	"github.com/dolthub/go-mysql-server/enginetest/queries"
-	"github.com/dolthub/go-mysql-server/enginetest/scriptgen/setup"
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/planbuilder"
+	"github.com/gabereiser/go-mysql-server/enginetest"
+	"github.com/gabereiser/go-mysql-server/enginetest/queries"
+	"github.com/gabereiser/go-mysql-server/enginetest/scriptgen/setup"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/planbuilder"
 )
 
 //go:generate go run ./main.go -srcRoot=../../../../ plan ../../testdata/spec.yaml
@@ -122,7 +122,7 @@ func generatePlans(specPath string, srcRoot string) error {
 		var buf bytes.Buffer
 		writeHeader(&buf, *pkg)
 		if spec.Name == "QueryPlanScriptTests" {
-			_, _ = fmt.Fprint(&buf, "import (\n\t\"github.com/dolthub/go-mysql-server/sql\"\n)\n\n")
+			_, _ = fmt.Fprint(&buf, "import (\n\t\"github.com/gabereiser/go-mysql-server/sql\"\n)\n\n")
 			err = generatePlansForScriptSuite(spec, &buf)
 		} else {
 			err = generatePlansForSuite(spec, &buf)

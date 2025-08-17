@@ -21,9 +21,9 @@ import (
 
 	"github.com/dolthub/vitess/go/sqltypes"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // JsonValue selects data from a json document using a json path and

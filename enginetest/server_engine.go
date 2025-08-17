@@ -31,14 +31,14 @@ import (
 	"github.com/go-sql-driver/mysql"
 	_ "github.com/go-sql-driver/mysql"
 
-	sqle "github.com/dolthub/go-mysql-server"
-	"github.com/dolthub/go-mysql-server/server"
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/analyzer"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
-	"github.com/dolthub/go-mysql-server/sql/planbuilder"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	sqle "github.com/gabereiser/go-mysql-server"
+	"github.com/gabereiser/go-mysql-server/server"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/analyzer"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql/planbuilder"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 type ServerQueryEngine struct {

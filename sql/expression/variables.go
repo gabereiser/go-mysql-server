@@ -15,8 +15,8 @@
 package expression
 
 import (
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // SystemVar is an expression that returns the value of a system variable. It's also used as the expression on the left

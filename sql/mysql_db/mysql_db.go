@@ -655,9 +655,6 @@ func (db *MySQLDb) GetUser(fetcher UserFetcher, user string, host string, roleSe
 	}
 	return nil
 }
-func (db *MySQLDb) UpdateUser(ctx *sql.Context, user *User) error {
-	return db.user.data.Put(ctx, user)
-}
 
 // UserActivePrivilegeSet fetches the User, and returns their entire active privilege set. This takes into account the
 // active roles, which are set in the context, therefore the user is also pulled from the context.

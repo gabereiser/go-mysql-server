@@ -16,7 +16,7 @@ package stats
 import (
 	"sort"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 func Union(ctx *sql.Context, b1, b2 []sql.HistogramBucket, types []sql.Type) ([]sql.HistogramBucket, error) {

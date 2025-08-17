@@ -17,8 +17,8 @@ package variables
 import (
 	"sync/atomic"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // globalStatusVariables is the underlying type of sql.StatusVariables.

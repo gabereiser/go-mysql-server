@@ -15,8 +15,8 @@
 package queries
 
 import (
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/analyzer/analyzererrors"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/analyzer/analyzererrors"
 )
 
 var OrderByGroupByScriptTests = []ScriptTest{

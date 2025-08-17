@@ -24,7 +24,7 @@ import (
 	"github.com/dolthub/vitess/go/vt/sqlparser"
 	ast "github.com/dolthub/vitess/go/vt/sqlparser"
 
-	sqle "github.com/dolthub/go-mysql-server"
+	sqle "github.com/gabereiser/go-mysql-server"
 )
 
 // InterceptorChain allows an integrator to build a chain of

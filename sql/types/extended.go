@@ -19,7 +19,7 @@ import (
 	"encoding/hex"
 	"errors"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 // ExtendedType is a serializable type that offers an extended interface for interacting with types in a wider context.

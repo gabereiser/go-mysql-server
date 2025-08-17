@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 
 	"github.com/gabereiser/go-mysql-server/sql"
 )

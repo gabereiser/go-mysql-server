@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/dolthub/go-mysql-server/sql/expression/function/json"
+	"github.com/gabereiser/go-mysql-server/sql/expression/function/json"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 func JsonRemoveTestCases(t *testing.T, prepare prepareJsonValue) []testCase {

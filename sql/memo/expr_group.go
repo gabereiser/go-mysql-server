@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
 )
 
 // ExprGroup is a linked list of plans that return the same result set

@@ -17,10 +17,10 @@ package analyzer
 import (
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/planbuilder"
-	"github.com/dolthub/go-mysql-server/sql/transform"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/planbuilder"
+	"github.com/gabereiser/go-mysql-server/sql/transform"
 )
 
 // loadTriggers loads any triggers that are required for a plan node to operate properly (except for nodes dealing with

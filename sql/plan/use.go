@@ -17,8 +17,8 @@ package plan
 import (
 	"fmt"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
 )
 
 // Use changes the current database.

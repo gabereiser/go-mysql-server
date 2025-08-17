@@ -21,9 +21,9 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/dolthub/go-mysql-server/internal/cmap"
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/internal/cmap"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // tableEditor manages the edits that a targetTable receives.
@@ -321,7 +321,7 @@ func columnsMatch(colIndexes []int, prefixLengths []uint16, row sql.Row, row2 sq
 	for i, idx := range colIndexes {
 		// Skip validating unique virtual columns.
 		// Right now trying to validate them would just trigger a panic.
-		// See https://github.com/dolthub/go-mysql-server/issues/2643
+		// See https://github.com/gabereiser/go-mysql-server/issues/2643
 		if schema[idx].Virtual {
 			return false
 		}

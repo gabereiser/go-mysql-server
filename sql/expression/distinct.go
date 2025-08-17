@@ -5,8 +5,8 @@ import (
 
 	"github.com/cespare/xxhash/v2"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 type DistinctExpression struct {

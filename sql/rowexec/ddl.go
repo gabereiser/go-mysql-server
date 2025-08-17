@@ -25,12 +25,12 @@ import (
 	"github.com/dolthub/vitess/go/mysql"
 	"github.com/sirupsen/logrus"
 
-	"github.com/dolthub/go-mysql-server/internal/similartext"
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/fulltext"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/internal/similartext"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/fulltext"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 func (b *BaseBuilder) buildAlterAutoIncrement(ctx *sql.Context, n *plan.AlterAutoIncrement, row sql.Row) (sql.RowIter, error) {

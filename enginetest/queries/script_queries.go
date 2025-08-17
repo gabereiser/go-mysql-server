@@ -22,11 +22,11 @@ import (
 	"github.com/dolthub/vitess/go/vt/sqlparser"
 	"gopkg.in/src-d/go-errors.v1"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/analyzer/analyzererrors"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/planbuilder"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/analyzer/analyzererrors"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/planbuilder"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 type ScriptTest struct {
@@ -247,7 +247,7 @@ CREATE TABLE sourceTable_test (
 		},
 	},
 	{
-		// https://github.com/dolthub/go-mysql-server/issues/2369
+		// https://github.com/gabereiser/go-mysql-server/issues/2369
 		Name: "auto_increment with self-referencing foreign key",
 		SetUpScript: []string{
 			`CREATE TABLE table1 (
@@ -282,7 +282,7 @@ CREATE TABLE sourceTable_test (
 		},
 	},
 	{
-		// https://github.com/dolthub/go-mysql-server/issues/2349
+		// https://github.com/gabereiser/go-mysql-server/issues/2349
 		Name: "auto_increment with foreign key",
 		SetUpScript: []string{
 			"CREATE TABLE table1 (id int NOT NULL AUTO_INCREMENT primary key, name text)",
@@ -3134,7 +3134,7 @@ CREATE TABLE tab3 (
 		},
 	},
 	{
-		Name:    "Issue #499", // https://github.com/dolthub/go-mysql-server/issues/499
+		Name:    "Issue #499", // https://github.com/gabereiser/go-mysql-server/issues/499
 		Dialect: "mysql",
 		SetUpScript: []string{
 			"SET @@SESSION.time_zone = 'UTC';",

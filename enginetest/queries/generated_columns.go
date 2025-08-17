@@ -15,9 +15,9 @@
 package queries
 
 import (
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 var GeneratedColumnTests = []ScriptTest{
@@ -1353,12 +1353,12 @@ var GeneratedColumnTests = []ScriptTest{
 			{
 				Query:       "insert into t1(a) values (2)",
 				ExpectedErr: sql.ErrUniqueKeyViolation,
-				Skip:        true, // https://github.com/dolthub/go-mysql-server/issues/2643
+				Skip:        true, // https://github.com/gabereiser/go-mysql-server/issues/2643
 			},
 			{
 				Query:       "create unique index i2 on t1(c)",
 				ExpectedErr: sql.ErrUniqueKeyViolation,
-				Skip:        true, // https://github.com/dolthub/go-mysql-server/issues/2643
+				Skip:        true, // https://github.com/gabereiser/go-mysql-server/issues/2643
 			},
 		},
 	},

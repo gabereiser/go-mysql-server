@@ -22,7 +22,7 @@ import (
 
 	"github.com/dolthub/vitess/go/mysql"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 // BinlogReplicaController allows callers to control a binlog replica. Providers built on go-mysql-server may optionally

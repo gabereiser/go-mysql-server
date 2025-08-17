@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // ExportSet implements the SQL function EXPORT_SET() which returns a string representation of bits in a number

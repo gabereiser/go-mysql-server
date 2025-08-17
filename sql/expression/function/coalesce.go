@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // Coalesce returns the first non-NULL value in the list, or NULL if there are no non-NULL values.

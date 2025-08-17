@@ -251,7 +251,7 @@ func genBuilder(t *testing.T, typ, pack, fileName string, objects map[string]str
 	usr, _ := user.Current()
 	dir := usr.HomeDir
 
-	f, err := os.Create(filepath.Join(dir, "go/src/github.com/dolthub/go-mysql-server/sql/rowexec", fileName))
+	f, err := os.Create(filepath.Join(dir, "go/src/github.com/gabereiser/go-mysql-server/sql/rowexec", fileName))
 	require.NoError(t, err)
 
 	w := bufio.NewWriter(f)
@@ -275,8 +275,8 @@ package rowexec
 
 import (
   "fmt"
-  "github.com/dolthub/go-mysql-server/sql"
-  "github.com/dolthub/go-mysql-server/sql/%s"
+  "github.com/gabereiser/go-mysql-server/sql"
+  "github.com/gabereiser/go-mysql-server/sql/%s"
 )
 
 `, pack)

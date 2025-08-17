@@ -22,9 +22,9 @@ import (
 	regex "github.com/dolthub/go-icu-regex"
 	"gopkg.in/src-d/go-errors.v1"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // RegexpReplace implements the REGEXP_REPLACE function.

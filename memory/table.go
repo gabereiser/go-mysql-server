@@ -27,14 +27,14 @@ import (
 
 	errors "gopkg.in/src-d/go-errors.v1"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/analyzer/analyzererrors"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/expression/function/vector"
-	"github.com/dolthub/go-mysql-server/sql/fulltext"
-	"github.com/dolthub/go-mysql-server/sql/iters"
-	"github.com/dolthub/go-mysql-server/sql/transform"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/analyzer/analyzererrors"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/expression/function/vector"
+	"github.com/gabereiser/go-mysql-server/sql/fulltext"
+	"github.com/gabereiser/go-mysql-server/sql/iters"
+	"github.com/gabereiser/go-mysql-server/sql/transform"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 type MemTable interface {

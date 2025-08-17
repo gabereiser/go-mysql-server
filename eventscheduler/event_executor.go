@@ -22,7 +22,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 // eventExecutor handles execution of each enabled events and any events related queries

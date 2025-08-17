@@ -17,8 +17,8 @@ package function
 import (
 	"fmt"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // Insert implements the SQL function INSERT() which inserts a substring at a specified position

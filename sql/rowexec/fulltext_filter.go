@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/fulltext"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/fulltext"
 )
 
 // FulltextFilterTable handles row iteration for filters involving Full-Text indexes, as they behave differently than

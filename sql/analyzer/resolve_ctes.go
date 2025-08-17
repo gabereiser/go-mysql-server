@@ -15,9 +15,9 @@
 package analyzer
 
 import (
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/transform"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/transform"
 )
 
 // schemaLength returns the length of a node's schema without actually accessing it. Useful when a node isn't yet

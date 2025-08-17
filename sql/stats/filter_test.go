@@ -20,8 +20,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 var xFds = sql.NewTablescanFDs(sql.NewColSet(1, 2, 3), []sql.ColSet{sql.NewColSet(1)}, nil, sql.NewColSet(1, 2, 3))

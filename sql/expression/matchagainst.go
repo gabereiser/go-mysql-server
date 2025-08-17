@@ -20,9 +20,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/fulltext"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/fulltext"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // MatchAgainst reads from the tables that create a Full-Text index, and returns a relevancy for each row that is passed

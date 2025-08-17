@@ -22,10 +22,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/mysql_db"
-	"github.com/dolthub/go-mysql-server/sql/plan"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/mysql_db"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 func (b *BaseBuilder) buildShowCharset(ctx *sql.Context, n *plan.ShowCharset, row sql.Row) (sql.RowIter, error) {

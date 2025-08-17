@@ -19,7 +19,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 // ProcedureCache contains all non-built-in stored procedures for each database.

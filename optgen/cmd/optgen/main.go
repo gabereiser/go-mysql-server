@@ -12,7 +12,7 @@ import (
 
 	"golang.org/x/tools/imports"
 
-	"github.com/dolthub/go-mysql-server/optgen/cmd/support"
+	"github.com/gabereiser/go-mysql-server/optgen/cmd/support"
 )
 
 //go:generate go run main.go -out ../../../sql/expression/function/aggregation/unary_aggs.og.go -pkg aggregation aggs

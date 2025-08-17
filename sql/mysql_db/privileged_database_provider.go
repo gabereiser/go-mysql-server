@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dolthub/go-mysql-server/sql/fulltext"
+	"github.com/gabereiser/go-mysql-server/sql/fulltext"
 
 	"github.com/gabereiser/go-mysql-server/sql"
 )

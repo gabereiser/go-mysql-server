@@ -20,8 +20,8 @@ import (
 
 	ast "github.com/dolthub/vitess/go/vt/sqlparser"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/plan"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/plan"
 )
 
 func (b *Builder) buildWith(inScope *scope, with *ast.With) (outScope *scope) {

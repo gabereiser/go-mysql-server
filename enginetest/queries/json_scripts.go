@@ -17,8 +17,8 @@ package queries
 import (
 	"github.com/dolthub/vitess/go/vt/sqlparser"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 var JsonScripts = []ScriptTest{
@@ -337,7 +337,7 @@ var JsonScripts = []ScriptTest{
 		},
 	},
 	{
-		// https://github.com/dolthub/go-mysql-server/issues/1855",
+		// https://github.com/gabereiser/go-mysql-server/issues/1855",
 		Name: "JSON_ARRAY properly handles CHAR bind vars",
 		SetUpScript: []string{
 			"CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` longtext,`languages` JSON, PRIMARY KEY (`id`))",

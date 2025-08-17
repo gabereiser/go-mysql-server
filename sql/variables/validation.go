@@ -17,7 +17,7 @@ package variables
 import (
 	"fmt"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 // validateCharacterSet is used in NotifyChange to validate that the given character set is valid.

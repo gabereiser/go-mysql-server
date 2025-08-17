@@ -19,7 +19,7 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 func NewNormDistIter(colCnt, rowCnt int, mean, std float64) sql.RowIter {

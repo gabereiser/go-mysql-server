@@ -19,11 +19,11 @@ import (
 
 	"gopkg.in/src-d/go-errors.v1"
 
-	sqle "github.com/dolthub/go-mysql-server"
-	"github.com/dolthub/go-mysql-server/enginetest/queries"
-	"github.com/dolthub/go-mysql-server/enginetest/scriptgen/setup"
-	"github.com/dolthub/go-mysql-server/server"
-	"github.com/dolthub/go-mysql-server/sql"
+	sqle "github.com/gabereiser/go-mysql-server"
+	"github.com/gabereiser/go-mysql-server/enginetest/queries"
+	"github.com/gabereiser/go-mysql-server/enginetest/scriptgen/setup"
+	"github.com/gabereiser/go-mysql-server/server"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 // Harness provides a way for database integrators to validate their implementation against the standard set of queries

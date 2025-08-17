@@ -1162,7 +1162,7 @@ var JoinScriptTests = []ScriptTest{
 		},
 	},
 	{
-		// After this change: https://github.com/dolthub/go-mysql-server/pull/3038
+		// After this change: https://github.com/gabereiser/go-mysql-server/pull/3038
 		// hash.HashOf takes in a sql.Schema to convert and hash keys, so
 		// we need to pass in the schema of the join key.
 		// This tests a bug introduced in that same PR where we incorrectly pass in the entire schema,

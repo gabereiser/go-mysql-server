@@ -20,10 +20,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/dolthub/go-mysql-server/enginetest/scriptgen/setup"
-	"github.com/dolthub/go-mysql-server/memory"
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/memo"
+	"github.com/gabereiser/go-mysql-server/enginetest/scriptgen/setup"
+	"github.com/gabereiser/go-mysql-server/memory"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/memo"
 )
 
 type JoinOpTests struct {
@@ -897,7 +897,7 @@ SELECT SUM(x) FROM xy WHERE x IN (
 					{"not found", 4, nil},
 				},
 			},
-			// re: https://github.com/dolthub/go-mysql-server/pull/2292
+			// re: https://github.com/gabereiser/go-mysql-server/pull/2292
 			{
 				Query: `SELECT
 			"testing" AS s,

@@ -22,11 +22,11 @@ import (
 
 	"github.com/cespare/xxhash/v2"
 
-	"github.com/dolthub/go-mysql-server/sql"
-	"github.com/dolthub/go-mysql-server/sql/expression"
-	"github.com/dolthub/go-mysql-server/sql/hash"
-	"github.com/dolthub/go-mysql-server/sql/transform"
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql/expression"
+	"github.com/gabereiser/go-mysql-server/sql/hash"
+	"github.com/gabereiser/go-mysql-server/sql/transform"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 )
 
 // TableData encapsulates all schema and data for a table's schema and rows. Other aspects of a table can change
@@ -280,7 +280,7 @@ func (td *TableData) errIfDuplicateEntryExist(ctx *sql.Context, cols []string, i
 
 	// We currently skip validating duplicates on unique virtual columns.
 	// Right now trying to validate them would just trigger a panic.
-	// See https://github.com/dolthub/go-mysql-server/issues/2643
+	// See https://github.com/gabereiser/go-mysql-server/issues/2643
 	for _, i := range columnMapping {
 		if td.schema.Schema[i].Virtual {
 			return nil

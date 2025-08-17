@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dolthub/go-mysql-server/sql/types"
+	"github.com/gabereiser/go-mysql-server/sql/types"
 
-	"github.com/dolthub/go-mysql-server/sql"
+	"github.com/gabereiser/go-mysql-server/sql"
 )
 
 func NewUpdateHistogram(db, table, index string, cols []string, stats sql.Statistic) *UpdateHistogram {
